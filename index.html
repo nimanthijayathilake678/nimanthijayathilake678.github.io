@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nimanthi Jayathilake - Backend Developer</title>
+    <title>Nimanthi Jayathilake - Software Engineer</title>
     <style>
         * {
             margin: 0;
@@ -492,6 +492,19 @@
             letter-spacing: 0.5px;
         }
 
+         .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 3rem;
+        }
+
+        .skills h3 {
+            flex-basis: 100%;
+            width: 100%;
+        }
+
         /* Animations */
         @keyframes fadeInUp {
             from {
@@ -585,7 +598,7 @@
 
     <section class="hero">
         <div class="container">
-            <h1>Backend Developer</h1>
+            <h1>Software Engineer</h1>
             <p class="tagline">Building scalable systems & robust APIs</p>
             <div class="cta-buttons">
                 <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -599,7 +612,7 @@
             <h2>About Me</h2>
             <div class="about-content">
                 <p>
-                    I'm a passionate backend developer with expertise in building high-performance, 
+                    I'm a passionate Software Engineer with expertise in building high-performance, 
                     scalable server-side applications. I specialize in designing RESTful APIs, 
                     microservices architecture, and database optimization.
                 </p>
@@ -608,18 +621,71 @@
                     clean, maintainable code and implementing best practices in system design.
                 </p>
                 <div class="skills">
-                    <span class="skill-tag">Node.js</span>
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">Java</span>
-                    <span class="skill-tag">PostgreSQL</span>
-                    <span class="skill-tag">MongoDB</span>
-                    <span class="skill-tag">Redis</span>
-                    <span class="skill-tag">Docker</span>
-                    <span class="skill-tag">Kubernetes</span>
-                    <span class="skill-tag">AWS</span>
-                    <span class="skill-tag">GraphQL</span>
-                    <span class="skill-tag">Microservices</span>
-                </div>
+                        <h3>Programming Languages</h3>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C Programming</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C# (Beginner)</span>
+
+                        <h3 style="margin-top: 2rem;">Frameworks & Tools</h3>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">Hibernate</span>
+                        <span class="skill-tag">JPA</span>
+                        <span class="skill-tag">.Net Core (Beginner)</span>
+
+                        <h3 style="margin-top: 2rem;">Architecture & Patterns</h3>
+                        <span class="skill-tag">Microservices</span>
+                        <span class="skill-tag">RESTful APIs</span>
+                        <span class="skill-tag">API Gateway</span>
+                        <span class="skill-tag">OAuth2</span>
+                        <span class="skill-tag">Single-SPA</span>
+                        <span class="skill-tag">GraphQL</span>
+                        <span class="skill-tag">MVC</span>
+
+                        <h3 style="margin-top: 2rem;">Databases</h3>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MS SQL Server</span>
+                        <span class="skill-tag">PL/SQL</span>
+
+                        <h3 style="margin-top: 2rem;">Cloud & DevOps</h3>
+                        <span class="skill-tag">AWS (Cognito, S3)</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Terraform</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">GitLab</span>
+                        <span class="skill-tag">CI/CD Pipelines</span>
+
+                        <h3 style="margin-top: 2rem;">Tools & IDEs</h3>
+                        <span class="skill-tag">Eclipse</span>
+                        <span class="skill-tag">Visual Studio Code</span>
+                        <span class="skill-tag">IntelliJ IDE</span>
+                        <span class="skill-tag">NetBeans</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">Swagger</span>
+                        <span class="skill-tag">Visual Studio</span>
+                        <span class="skill-tag">Figma</span>
+
+                        <h3 style="margin-top: 2rem;">Operating Systems</h3>
+                        <span class="skill-tag">Windows</span>
+                        <span class="skill-tag">Linux</span>
+
+                        <h3 style="margin-top: 2rem;">Agile & Collaboration</h3>
+                        <span class="skill-tag">Agile/Scrum</span>
+                        <span class="skill-tag">Jira</span>
+
+                        <h3 style="margin-top: 2rem;">Security & Auth</h3>
+                        <span class="skill-tag">JWT</span>
+                        <span class="skill-tag">OAuth2</span>
+                        <span class="skill-tag">Keycloak</span>
+                        <span class="skill-tag">Role-Based Access Control (RBAC)</span>
+                    </div>
             </div>
         </div>
     </section>
@@ -630,71 +696,79 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>E-Commerce API</h3>
+                        <h3>ShopWave</h3>
                         <p>Scalable REST API for online marketplace</p>
                     </div>
                     <div class="project-body">
                         <p>
-                            Built a high-performance e-commerce API handling 10k+ requests/min with 
-                            advanced features like inventory management, payment integration, and real-time 
-                            order tracking.
-                        </p>
+                            Developed a scalable Spring Boot microservices e-commerce platform with core Product, Inventory, and Order services, using JPA/Hibernate and Docker.
+                            The architecture is unified by a Spring Cloud Gateway, secured with Keycloak, and boasts resilience through a Circuit Breaker pattern, with APIs
+                            documented via OpenAPI.
+                         </p>
                         <div class="tech-stack">
-                            <span class="tech-badge">Node.js</span>
-                            <span class="tech-badge">Express</span>
-                            <span class="tech-badge">PostgreSQL</span>
-                            <span class="tech-badge">Redis</span>
+                            <span class="tech-badge">Java</span>
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">Keycloak</span>
+                            <span class="tech-badge">Microservices</span>
+                            <span class="tech-badge">Spring Cloud Gateway</span>
+                            <span class="tech-badge">Swagger</span>
                         </div>
                         <div class="project-links">
-                            <a href="#">→ GitHub</a>
-                            <a href="#">→ Live Demo</a>
+                            <a href="https://github.com/NJ-E-Commerce-Application">→ GitHub</a>
+                            <!-- <a href="#">→ Live Demo</a> -->
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>Real-Time Chat System</h3>
-                        <p>WebSocket-based messaging platform</p>
+                        <h3> Mom Care</h3>
+                        <p> Maternity Advisory and Health Records System</p>
                     </div>
                     <div class="project-body">
                         <p>
-                            Developed a scalable real-time messaging system supporting group chats, 
-                            file sharing, and presence indicators. Implemented horizontal scaling with 
-                            Redis Pub/Sub.
-                        </p>
-                        <div class="tech-stack">
-                            <span class="tech-badge">Python</span>
-                            <span class="tech-badge">FastAPI</span>
-                            <span class="tech-badge">WebSockets</span>
-                            <span class="tech-badge">MongoDB</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#">→ GitHub</a>
-                            <a href="#">→ Documentation</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Microservices Architecture</h3>
-                        <p>Distributed system with service mesh</p>
-                    </div>
-                    <div class="project-body">
-                        <p>
-                            Designed and implemented a microservices-based application with API gateway, 
-                            service discovery, distributed tracing, and circuit breaker patterns.
+                            Contributed as a full-stack developer to a healthcare platform
+                            aimed at digitalizing maternal and child health records.
+                            Built RESTful services and web forms to track child growth,
+                            vaccinations, and medical advice
+                            Enabled real-time collaboration between healthcare professionals
+                            (MOH officers, midwives, VOG doctors).
                         </p>
                         <div class="tech-stack">
                             <span class="tech-badge">Java</span>
                             <span class="tech-badge">Spring Boot</span>
-                            <span class="tech-badge">Docker</span>
-                            <span class="tech-badge">Kubernetes</span>
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">MySQL</span>
                         </div>
                         <div class="project-links">
-                            <a href="#">→ GitHub</a>
-                            <a href="#">→ Architecture Diagram</a>
+                            <a href="https://github.com/nimanthijayathilake678/Maternity-Advicer-System">→ GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Food Delivery Time Prediction</h3>
+                        <p>Food Delivery Time Prediction using Python</p>
+                    </div>
+                    <div class="project-body">
+                        <p>
+                            This project predicts food delivery times based on key factors such as the
+                            delivery partner's age, ratings, and the distance to be covered. It combines data analysis, 
+                            visualization, and machine learning techniques to provide insights and predictions for optimizing 
+                            delivery efficiency
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Pandas</span>
+                            <span class="tech-badge">NumPy</span>
+                            <span class="tech-badge">Plotly Express</span>
+                            <span class="tech-badge">Keras</span>
+                            <span class="tech-badge">Scikit-learn</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/nimanthijayathilake678/Food-Delivery-Time-Prediction-using-Python">→ GitHub</a>
+                            <!-- <a href="#">→ Architecture Diagram</a> -->
                         </div>
                     </div>
                 </div>
